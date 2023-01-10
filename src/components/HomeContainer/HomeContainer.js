@@ -17,8 +17,7 @@ const HomeContainer = () => {
           <Product product={product} key={product._id}></Product>
         ))}
       </div>
-      <div className="w-full flex justify-center mt-4">
-        {" "}
+      <div className="w-full flex justify-center mt-4 bg-primary">
         <DetailsPage className="h-4 flex justify-center " path="/products" navigate={navigate}>
           <h2 className="inline">View More</h2>
           <ArrowRightIcon className="h-4 inline ml-4" />

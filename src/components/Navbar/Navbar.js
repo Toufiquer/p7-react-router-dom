@@ -3,7 +3,7 @@ import CustomLink from "../CustomLink/CustomLink";
 
 const Navbar = () => {
   return (
-    <div className="bg-blue-300 py-2 w-full">
+    <div className="bg-primaryBg text-lite py-2 w-full">
       <div className="md:container mx-auto text-2xl ">
         <nav className="flex justify-between md:flex-row flex-col text-center">
           <h2>Toufiquer Website</h2>
