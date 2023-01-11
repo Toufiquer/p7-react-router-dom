@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { ThemeMode } from "../../App";
 import CustomLink from "../CustomLink/CustomLink";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
-console.log(MoonIcon, " => Line No: 6");
 const Navbar = () => {
   const [theme, setTheme] = useContext(ThemeMode);
   return (

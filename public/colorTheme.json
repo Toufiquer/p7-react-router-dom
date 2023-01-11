@@ -2,29 +2,29 @@
   {
     "DarkThemeWith7Color": [
       {
-        "modeName": "dark-7-1",
+        "modelNumber": "dark-7-1",
         "totalColor": 7,
         "color": {
-          "darkFirst": "#4B0082",
-          "darkSecond": "#228B22",
-          "darkThird": "#191970",
-          "darkFourth": "#36454F",
-          "darkFifth": "#8B0000",
-          "darkSixth": "#330000",
-          "darkSeventh": "#BDBDBD"
+          "dark1": "#4B0082",
+          "dark2": "#228B22",
+          "dark3": "#191970",
+          "dark4": "#36454F",
+          "dark5": "#8B0000",
+          "dark6": "#330000",
+          "dark7": "#BDBDBD"
         }
       },
       {
-        "modeName": "dark-7-2",
+        "modelNumber": "dark-7-2",
         "totalColor": 7,
         "color": {
-          "darkFirst": "#4c1d95",
-          "darkSecond": "#78716c",
-          "darkThird": "#0e7490",
-          "darkFourth": "#1d4ed8",
-          "darkFifth": "#b45309",
-          "darkSixth": "#a21caf",
-          "darkSeventh": "#be123c"
+          "dark1": "#4c1d95",
+          "dark2": "#78716c",
+          "dark3": "#0e7490",
+          "dark4": "#1d4ed8",
+          "dark5": "#b45309",
+          "dark6": "#a21caf",
+          "dark7": "#be123c"
         }
       }
     ]
@@ -32,63 +32,63 @@
   {
     "DarkThemeWith14Color": [
       {
-        "modeName": "dark-14-1",
+        "modelNumber": "dark-14-1",
         "totalColor": 14,
         "color": {
-          "darkFirst": "#881337",
-          "darkSecond": "#701a75",
-          "darkThird": "#581c87",
-          "darkFourth": "#312e81",
-          "darkFifth": "#1e3a8a",
-          "darkSixth": "#0c4a6e",
-          "darkSeventh": "#064e3b",
-          "darkEighth": "#365314",
-          "darkNinth": "#14532d",
-          "darkTenth": "#713f12",
-          "darkEleventh": "#7f1d1d",
-          "darkTwelfth": "#1c1917",
-          "darkThirteenth": "#111827",
-          "darkFourteenth": "#0f172a"
+          "dark1": "#881337",
+          "dark2": "#701a75",
+          "dark3": "#581c87",
+          "dark4": "#312e81",
+          "dark5": "#1e3a8a",
+          "dark6": "#0c4a6e",
+          "dark7": "#064e3b",
+          "dark8": "#365314",
+          "dark9": "#14532d",
+          "dark10": "#713f12",
+          "dark11": "#7f1d1d",
+          "dark12": "#1c1917",
+          "dark13": "#111827",
+          "dark14": "#0f172a"
         }
       },
       {
-        "modeName": "dark-14-2",
+        "modelNumber": "dark-14-2",
         "totalColor": 14,
         "color": {
-          "darkFirst": "#be123c",
-          "darkSecond": "#a21caf",
-          "darkThird": "#6d28d9",
-          "darkFourth": "#4338ca",
-          "darkFifth": "#1d4ed8",
-          "darkSixth": "#0369a1",
-          "darkSeventh": "#047857",
-          "darkEighth": "#4d7c0f",
-          "darkNinth": "#b45309",
-          "darkTenth": "#c2410c",
-          "darkEleventh": "#b91c1c",
-          "darkTwelfth": "#404040",
-          "darkThirteenth": "#374151",
-          "darkFourteenth": "#334155"
+          "dark1": "#be123c",
+          "dark2": "#a21caf",
+          "dark3": "#6d28d9",
+          "dark4": "#4338ca",
+          "dark5": "#1d4ed8",
+          "dark6": "#0369a1",
+          "dark7": "#047857",
+          "dark8": "#4d7c0f",
+          "dark9": "#b45309",
+          "dark10": "#c2410c",
+          "dark11": "#b91c1c",
+          "dark12": "#404040",
+          "dark13": "#374151",
+          "dark14": "#334155"
         }
       },
       {
-        "modeName": "dark-14-3",
+        "modelNumber": "dark-14-3",
         "totalColor": 14,
         "color": {
-          "darkFirst": "#ec4899",
-          "darkSecond": "#d946ef",
-          "darkThird": "#8b5cf6",
-          "darkFourth": "#6366f1",
-          "darkFifth": "#3b82f6",
-          "darkSixth": "#0ea5e9",
-          "darkSeventh": "#10b981",
-          "darkEighth": "#84cc16",
-          "darkNinth": "#f59e0b",
-          "darkTenth": "#f97316",
-          "darkEleventh": "#ef4444",
-          "darkTwelfth": "#71717a",
-          "darkThirteenth": "#6b7280",
-          "darkFourteenth": "#64748b"
+          "dark1": "#ec4899",
+          "dark2": "#d946ef",
+          "dark3": "#8b5cf6",
+          "dark4": "#6366f1",
+          "dark5": "#3b82f6",
+          "dark6": "#0ea5e9",
+          "dark7": "#10b981",
+          "dark8": "#84cc16",
+          "dark9": "#f59e0b",
+          "dark10": "#f97316",
+          "dark11": "#ef4444",
+          "dark12": "#71717a",
+          "dark13": "#6b7280",
+          "dark14": "#64748b"
         }
       }
     ]
@@ -96,29 +96,29 @@
   {
     "liteThemeWith7Color": [
       {
-        "modeName": "lite-7-1",
+        "modelNumber": "lite-7-1",
         "totalColor": 7,
         "color": {
-          "liteFirst": "#87CEEB",
-          "liteSecond": "#FFE5B4",
-          "liteThird": "#E6E6FA",
-          "liteFourth": "#90EE90",
-          "liteFifth": "#FFFACD",
-          "liteSixth": "#2E8B57",
-          "liteSeventh": "#FFC0CB"
+          "lite1": "#87CEEB",
+          "lite2": "#FFE5B4",
+          "lite3": "#E6E6FA",
+          "lite4": "#90EE90",
+          "lite5": "#FFFACD",
+          "lite6": "#2E8B57",
+          "lite7": "#FFC0CB"
         }
       },
       {
-        "modeName": "lite-7-2",
+        "modelNumber": "lite-7-2",
         "totalColor": 7,
         "color": {
-          "liteFirst": "#be185d",
-          "liteSecond": "#a21caf",
-          "liteThird": "#4338ca",
-          "liteFourth": "#0369a1",
-          "liteFifth": "#047857",
-          "liteSixth": "#4d7c0f",
-          "liteSeventh": "#292524"
+          "lite1": "#be185d",
+          "lite2": "#a21caf",
+          "lite3": "#4338ca",
+          "lite4": "#0369a1",
+          "lite5": "#047857",
+          "lite6": "#4d7c0f",
+          "lite7": "#292524"
         }
       }
     ]
@@ -126,63 +126,63 @@
   {
     "liteThemeWith14Color": [
       {
-        "modeName": "lite-14-1",
+        "modelNumber": "lite-14-1",
         "totalColor": 14,
         "color": {
-          "liteFirst": "#fecdd3",
-          "liteSecond": "#f5d0fe",
-          "liteThird": "#ddd6fe",
-          "liteFourth": "#ddd6fe",
-          "liteFifth": "#c7d2fe",
-          "liteSixth": "#bfdbfe",
-          "liteSeventh": "#bae6fd",
-          "liteEighth": "#99f6e4",
-          "liteNinth": "#bbf7d0",
-          "liteTenth": "#fde68a",
-          "liteEleventh": "#fed7aa",
-          "liteTwelfth": "#fecaca",
-          "liteThirteenth": "#e4e4e7",
-          "liteFourteenth": "#e5e7eb"
+          "lite1": "#fecdd3",
+          "lite2": "#f5d0fe",
+          "lite3": "#ddd6fe",
+          "lite4": "#ddd6fe",
+          "lite5": "#c7d2fe",
+          "lite6": "#bfdbfe",
+          "lite7": "#bae6fd",
+          "lite8": "#99f6e4",
+          "lite9": "#bbf7d0",
+          "lite10": "#fde68a",
+          "lite11": "#fed7aa",
+          "lite12": "#fecaca",
+          "lite13": "#e4e4e7",
+          "lite14": "#e5e7eb"
         }
       },
       {
-        "modeName": "lite-14-2",
+        "modelNumber": "lite-14-2",
         "totalColor": 14,
         "color": {
-          "liteFirst": "#cbd5e1",
-          "liteSecond": "#d1d5db",
-          "liteThird": "#d4d4d4",
-          "liteFourth": "#fca5a5",
-          "liteFifth": "#fdba74",
-          "liteSixth": "#fcd34d",
-          "liteSeventh": "#fde047",
-          "liteEighth": "#5eead4",
-          "liteNinth": "#67e8f9",
-          "liteTenth": "#93c5fd",
-          "liteEleventh": "#a5b4fc",
-          "liteTwelfth": "#c4b5fd",
-          "liteThirteenth": "#86198f",
-          "liteFourteenth": "#fda4af"
+          "lite1": "#cbd5e1",
+          "lite2": "#d1d5db",
+          "lite3": "#d4d4d4",
+          "lite4": "#fca5a5",
+          "lite5": "#fdba74",
+          "lite6": "#fcd34d",
+          "lite7": "#fde047",
+          "lite8": "#5eead4",
+          "lite9": "#67e8f9",
+          "lite10": "#93c5fd",
+          "lite11": "#a5b4fc",
+          "lite12": "#c4b5fd",
+          "lite13": "#86198f",
+          "lite14": "#fda4af"
         }
       },
       {
-        "modeName": "lite-14-3",
+        "modelNumber": "lite-14-3",
         "totalColor": 14,
         "color": {
-          "liteFirst": "#9ca3af",
-          "liteSecond": "#18181b",
-          "liteThird": "#171717",
-          "liteFourth": "#f87171",
-          "liteFifth": "#fb923c",
-          "liteSixth": "#fbbf24",
-          "liteSeventh": "#a3e635",
-          "liteEighth": "#4ade80",
-          "liteNinth": "#34d399",
-          "liteTenth": "#2dd4bf",
-          "liteEleventh": "#22d3ee",
-          "liteTwelfth": "#60a5fa",
-          "liteThirteenth": "#c084fc",
-          "liteFourteenth": "#f472b6"
+          "lite1": "#9ca3af",
+          "lite2": "#18181b",
+          "lite3": "#171717",
+          "lite4": "#f87171",
+          "lite5": "#fb923c",
+          "lite6": "#fbbf24",
+          "lite7": "#a3e635",
+          "lite8": "#4ade80",
+          "lite9": "#34d399",
+          "lite10": "#2dd4bf",
+          "lite11": "#22d3ee",
+          "lite12": "#60a5fa",
+          "lite13": "#c084fc",
+          "lite14": "#f472b6"
         }
       }
     ]

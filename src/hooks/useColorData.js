@@ -9,12 +9,11 @@ export const useColorData = () => {
   useEffect(() => {
     axios.get("colorTheme.json").then((d) => {
       let data = d.data;
-      console.log(data, " => Line No: 12");
       setDark7(data[0]["DarkThemeWith7Color"]);
       setDark14(data[1]["DarkThemeWith14Color"]);
       setLite7(data[2]["liteThemeWith7Color"]);
       setLite14(data[3]["liteThemeWith14Color"]);
     });
   }, []);
-  return [dark7, lite7, lite14, dark14];
+  return [dark7, lite7, dark14, lite14];
 };
