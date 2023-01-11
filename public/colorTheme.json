@@ -1,0 +1,190 @@
+[
+  {
+    "Dark Theme With 7 Color": [
+      {
+        "mode": "dark-7-1",
+        "color template": 7,
+        "color": {
+          "darkFirst": "#4B0082",
+          "darkSecond": "#228B22",
+          "darkThird": "#191970",
+          "darkFourth": "#36454F",
+          "darkFifth": "#8B0000",
+          "darkSixth": "#330000",
+          "darkSeventh": "#BDBDBD"
+        }
+      },
+      {
+        "mode": "dark-7-2",
+        "color template": 7,
+        "color": {
+          "darkFirst": "#4c1d95",
+          "darkSecond": "#78716c",
+          "darkThird": "#0e7490",
+          "darkFourth": "#1d4ed8",
+          "darkFifth": "#b45309",
+          "darkSixth": "#a21caf",
+          "darkSeventh": "#be123c"
+        }
+      }
+    ]
+  },
+  {
+    "Dark Theme With 14 Color": [
+      {
+        "mode": "dark-14-1",
+        "color template": 14,
+        "color": {
+          "darkFirst": "#881337",
+          "darkSecond": "#701a75",
+          "darkThird": "#581c87",
+          "darkFourth": "#312e81",
+          "darkFifth": "#1e3a8a",
+          "darkSixth": "#0c4a6e",
+          "darkSeventh": "#064e3b",
+          "darkEighth": "#365314",
+          "darkNinth": "#14532d",
+          "darkTenth": "#713f12",
+          "darkEleventh": "#7f1d1d",
+          "darkTwelfth": "#1c1917",
+          "darkThirteenth": "#111827",
+          "darkFourteenth": "#0f172a"
+        }
+      },
+      {
+        "mode": "dark-14-2",
+        "color template": 14,
+        "color": {
+          "darkFirst": "#be123c",
+          "darkSecond": "#a21caf",
+          "darkThird": "#6d28d9",
+          "darkFourth": "#4338ca",
+          "darkFifth": "#1d4ed8",
+          "darkSixth": "#0369a1",
+          "darkSeventh": "#047857",
+          "darkEighth": "#4d7c0f",
+          "darkNinth": "#b45309",
+          "darkTenth": "#c2410c",
+          "darkEleventh": "#b91c1c",
+          "darkTwelfth": "#404040",
+          "darkThirteenth": "#374151",
+          "darkFourteenth": "#334155"
+        }
+      },
+      {
+        "mode": "dark-14-3",
+        "color template": 14,
+        "color": {
+          "darkFirst": "#ec4899",
+          "darkSecond": "#d946ef",
+          "darkThird": "#8b5cf6",
+          "darkFourth": "#6366f1",
+          "darkFifth": "#3b82f6",
+          "darkSixth": "#0ea5e9",
+          "darkSeventh": "#10b981",
+          "darkEighth": "#84cc16",
+          "darkNinth": "#f59e0b",
+          "darkTenth": "#f97316",
+          "darkEleventh": "#ef4444",
+          "darkTwelfth": "#71717a",
+          "darkThirteenth": "#6b7280",
+          "darkFourteenth": "#64748b"
+        }
+      }
+    ]
+  },
+  {
+    "lite Theme With 7 Color": [
+      {
+        "mode": "lite-7-1",
+        "color template": 7,
+        "color": {
+          "liteFirst": "#87CEEB",
+          "liteSecond": "#FFE5B4",
+          "liteThird": "#E6E6FA",
+          "liteFourth": "#90EE90",
+          "liteFifth": "#FFFACD",
+          "liteSixth": "#2E8B57",
+          "liteSeventh": "#FFC0CB"
+        }
+      },
+      {
+        "mode": "lite-7-2",
+        "color template": 7,
+        "color": {
+          "liteFirst": "#be185d",
+          "liteSecond": "#a21caf",
+          "liteThird": "#4338ca",
+          "liteFourth": "#0369a1",
+          "liteFifth": "#047857",
+          "liteSixth": "#4d7c0f",
+          "liteSeventh": "#292524"
+        }
+      }
+    ]
+  },
+  {
+    "lite Theme With 14 Color": [
+      {
+        "mode": "lite-14-1",
+        "color template": 14,
+        "color": {
+          "liteFirst": "#fecdd3",
+          "liteSecond": "#f5d0fe",
+          "liteThird": "#ddd6fe",
+          "liteFourth": "#ddd6fe",
+          "liteFifth": "#c7d2fe",
+          "liteSixth": "#bfdbfe",
+          "liteSeventh": "#bae6fd",
+          "liteEighth": "#99f6e4",
+          "liteNinth": "#bbf7d0",
+          "liteTenth": "#fde68a",
+          "liteEleventh": "#fed7aa",
+          "liteTwelfth": "#fecaca",
+          "liteThirteenth": "#e4e4e7",
+          "liteFourteenth": "#e5e7eb"
+        }
+      },
+      {
+        "mode": "lite-14-2",
+        "color template": 14,
+        "color": {
+          "liteFirst": "#cbd5e1",
+          "liteSecond": "#d1d5db",
+          "liteThird": "#d4d4d4",
+          "liteFourth": "#fca5a5",
+          "liteFifth": "#fdba74",
+          "liteSixth": "#fcd34d",
+          "liteSeventh": "#fde047",
+          "liteEighth": "#5eead4",
+          "liteNinth": "#67e8f9",
+          "liteTenth": "#93c5fd",
+          "liteEleventh": "#a5b4fc",
+          "liteTwelfth": "#c4b5fd",
+          "liteThirteenth": "#86198f",
+          "liteFourteenth": "#fda4af"
+        }
+      },
+      {
+        "mode": "lite-14-3",
+        "color template": 14,
+        "color": {
+          "liteFirst": "#9ca3af",
+          "liteSecond": "#18181b",
+          "liteThird": "#171717",
+          "liteFourth": "#f87171",
+          "liteFifth": "#fb923c",
+          "liteSixth": "#fbbf24",
+          "liteSeventh": "#a3e635",
+          "liteEighth": "#4ade80",
+          "liteNinth": "#34d399",
+          "liteTenth": "#2dd4bf",
+          "liteEleventh": "#22d3ee",
+          "liteTwelfth": "#60a5fa",
+          "liteThirteenth": "#c084fc",
+          "liteFourteenth": "#f472b6"
+        }
+      }
+    ]
+  }
+]
