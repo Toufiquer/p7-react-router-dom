@@ -11,17 +11,12 @@ const Colors = () => {
         <div className={containerStyle}>
           <h2 className="text-2xl text-semibold text-center my-2 underline">Color For Dark Theme</h2>
           <ul className="w-[400px] flex flex-col items-center">{dark7 && dark7.map((curr) => <SingleColorList key={curr.modelNumber} data={curr}></SingleColorList>)}</ul>
+          <ul className="w-[400px] flex flex-col items-center">{dark14 && dark14.map((curr) => <SingleColorList key={curr.modelNumber} data={curr}></SingleColorList>)}</ul>
         </div>
-        <div className="flex flex-col">
-          <ul>
-            <li className=" bg-[#4B0082] ">Theme 1</li>
-            <li>Theme 1</li>
-            <li>Theme 1</li>
-            <li>Theme 1</li>
-            <li>Theme 1</li>
-            <li>Theme 1</li>
-            <li>Theme 1</li>
-          </ul>
+        <div className={containerStyle}>
+          <h2 className="text-2xl text-semibold text-center my-2 underline">Color For Lite Theme</h2>
+          <ul className="w-[400px] flex flex-col items-center">{lite7 && lite7.map((curr) => <SingleColorList key={curr.modelNumber} data={curr}></SingleColorList>)}</ul>
+          <ul className="w-[400px] flex flex-col items-center">{lite14 && lite14.map((curr) => <SingleColorList key={curr.modelNumber} data={curr}></SingleColorList>)}</ul>
         </div>
       </div>
     </>

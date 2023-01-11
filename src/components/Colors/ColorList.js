@@ -22,7 +22,7 @@ const ColorList = ({ styleColor, data }) => {
       title="click to copy #[hex]"
       className={styleColor + " bg-blue-200 hover:bg-blue-500"}
     >
-      {data.split("-")[0]} <ColorBox data={colorCode}></ColorBox>
+      <span className="w-[80px]">{data.split("-")[0]}</span> <ColorBox data={colorCode}></ColorBox>
       {tooltip}
     </li>
   );
