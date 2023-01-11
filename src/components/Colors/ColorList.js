@@ -1,11 +1,14 @@
 import React from "react";
+import { copyTextToClipboard } from "../utilities/copyTextToClipboard";
+import ColorBox from "./ColorBox";
 
-const ColorList = ({ styleColor, data }) => {
-  const colorData = `bg-[${data.split("-")[1]}]`;
-  console.log(colorData, " => Line No: 4");
+const ColorList = ({ styleColor, data, children }) => {
+  const colorCode = data.split("-")[1];
+
   return (
-    <li title="click to copy #[hex]" className={styleColor}>
-      {data.split("-")[0]} <div style={{ backgroundColor: `${data.split("-")[1]}` }} className={`w-[200px] h-full`}></div>
+    <li onClick={() => copyTextToClipboard(colorCode)} title="click to copy #[hex]" className={styleColor}>
+      {data.split("-")[0]} <ColorBox data={colorCode}></ColorBox>
+      {children}
     </li>
   );
 };

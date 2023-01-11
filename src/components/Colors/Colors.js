@@ -14,7 +14,7 @@ const Colors = () => {
         </div>
         <div className="flex flex-col">
           <ul>
-            <li>Theme 1</li>
+            <li className=" bg-[#4B0082] ">Theme 1</li>
             <li>Theme 1</li>
             <li>Theme 1</li>
             <li>Theme 1</li>
