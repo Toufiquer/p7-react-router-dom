@@ -9,16 +9,18 @@ import Products from "./components/Products/Products";
 import Users from "./components/Users/Users";
 import { useThemeDetector } from "./hooks/useThemeDetector";
 export const ThemeMode = createContext("Theme");
+export const ThemeMode2 = createContext("Theme2");
 
 function App() {
   const [theme, setTheme] = useState(true);
+  const [theme2, setTheme2] = useState({});
   const currentTheme = useThemeDetector();
   useEffect(() => {
     setTheme(currentTheme);
   }, [currentTheme]);
   return (
     <ThemeMode.Provider value={[theme, setTheme]}>
-      <div>
+      <ThemeMode2.Provider value={[theme2, setTheme2]}>
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -28,7 +30,7 @@ function App() {
           <Route path="/charts" element={<Charts />}></Route>
           <Route path="/colors" element={<Colors />}></Route>
         </Routes>
-      </div>
+      </ThemeMode2.Provider>
     </ThemeMode.Provider>
   );
 }

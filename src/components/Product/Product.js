@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeMode } from "../../App";
 import { AddButton, DetailsButton, RemoveButton } from "../Button/Button";
 
 const Product = ({ product: { id, name, picture, price } }) => {
+  const [theme] = useContext(ThemeMode);
   const handAdd = (event, id) => {
     event.stopPropagation();
     console.log("Add", id, " => Line No: 6");
@@ -15,8 +17,8 @@ const Product = ({ product: { id, name, picture, price } }) => {
     console.log("details", id, " => Line No: 10");
   };
   return (
-    <div onClick={(e) => handleDetails(e, id)} className="max-w-sm bg-blue-400 p-2 border-2 border-solid border-blue-50 rounded-lg hover:cursor-pointer hover:bg-blue-500 duration-800">
-      <img className="w-full rounded-lg h-96 object-cover" src={picture} alt={name} />
+    <div onClick={(e) => handleDetails(e, id)} className={`max-w-sm bg-[#4338ca] p-2 border-2 border-solid border-blue-50 rounded-lg hover:cursor-pointer  duration-800 ${theme ? " hover:bg-[#191970] " : " hover:bg-[#191970]"}`}>
+      <img className={`w-full rounded-lg h-96 object-cover ${!theme ? "brightness-100" : "brightness-50"}`} src={picture} alt={name} />
       <h2 title={name} className="text-xl py-1">
         Name: {name.length >= 14 ? name.slice(0, 14) : name}
       </h2>

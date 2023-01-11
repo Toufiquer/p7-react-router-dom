@@ -14,10 +14,10 @@ const HomeContainer = () => {
       {/* Display 3 Products in home page */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-1 ">
         {customProducts.map((product) => (
-          <Product product={product} key={product._id}></Product>
+          <Product product={product} key={product.id}></Product>
         ))}
       </div>
-      <div className="w-full flex justify-center mt-4 bg-primary">
+      <div className="w-full flex justify-center mt-4">
         <DetailsPage className="h-4 flex justify-center " path="/products" navigate={navigate}>
           <h2 className="inline">View More</h2>
           <ArrowRightIcon className="h-4 inline ml-4" />
