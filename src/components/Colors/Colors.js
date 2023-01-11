@@ -1,7 +1,10 @@
 import React from "react";
+import { useColorData } from "../../hooks/useColorData";
 import SingleColorList from "./SingleColorList";
 
 const Colors = () => {
+  const [dark7, setDark7, lite14, dark14] = useColorData();
+  console.log(dark7, setDark7, lite14, dark14, " => Line No: 7");
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2">

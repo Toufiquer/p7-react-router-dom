@@ -1,9 +1,9 @@
 [
   {
-    "Dark Theme With 7 Color": [
+    "DarkThemeWith7Color": [
       {
-        "mode": "dark-7-1",
-        "color template": 7,
+        "modeName": "dark-7-1",
+        "totalColor": 7,
         "color": {
           "darkFirst": "#4B0082",
           "darkSecond": "#228B22",
@@ -15,8 +15,8 @@
         }
       },
       {
-        "mode": "dark-7-2",
-        "color template": 7,
+        "modeName": "dark-7-2",
+        "totalColor": 7,
         "color": {
           "darkFirst": "#4c1d95",
           "darkSecond": "#78716c",
@@ -30,10 +30,10 @@
     ]
   },
   {
-    "Dark Theme With 14 Color": [
+    "DarkThemeWith14Color": [
       {
-        "mode": "dark-14-1",
-        "color template": 14,
+        "modeName": "dark-14-1",
+        "totalColor": 14,
         "color": {
           "darkFirst": "#881337",
           "darkSecond": "#701a75",
@@ -52,8 +52,8 @@
         }
       },
       {
-        "mode": "dark-14-2",
-        "color template": 14,
+        "modeName": "dark-14-2",
+        "totalColor": 14,
         "color": {
           "darkFirst": "#be123c",
           "darkSecond": "#a21caf",
@@ -72,8 +72,8 @@
         }
       },
       {
-        "mode": "dark-14-3",
-        "color template": 14,
+        "modeName": "dark-14-3",
+        "totalColor": 14,
         "color": {
           "darkFirst": "#ec4899",
           "darkSecond": "#d946ef",
@@ -94,10 +94,10 @@
     ]
   },
   {
-    "lite Theme With 7 Color": [
+    "liteThemeWith7Color": [
       {
-        "mode": "lite-7-1",
-        "color template": 7,
+        "modeName": "lite-7-1",
+        "totalColor": 7,
         "color": {
           "liteFirst": "#87CEEB",
           "liteSecond": "#FFE5B4",
@@ -109,8 +109,8 @@
         }
       },
       {
-        "mode": "lite-7-2",
-        "color template": 7,
+        "modeName": "lite-7-2",
+        "totalColor": 7,
         "color": {
           "liteFirst": "#be185d",
           "liteSecond": "#a21caf",
@@ -124,10 +124,10 @@
     ]
   },
   {
-    "lite Theme With 14 Color": [
+    "liteThemeWith14Color": [
       {
-        "mode": "lite-14-1",
-        "color template": 14,
+        "modeName": "lite-14-1",
+        "totalColor": 14,
         "color": {
           "liteFirst": "#fecdd3",
           "liteSecond": "#f5d0fe",
@@ -146,8 +146,8 @@
         }
       },
       {
-        "mode": "lite-14-2",
-        "color template": 14,
+        "modeName": "lite-14-2",
+        "totalColor": 14,
         "color": {
           "liteFirst": "#cbd5e1",
           "liteSecond": "#d1d5db",
@@ -166,8 +166,8 @@
         }
       },
       {
-        "mode": "lite-14-3",
-        "color template": 14,
+        "modeName": "lite-14-3",
+        "totalColor": 14,
         "color": {
           "liteFirst": "#9ca3af",
           "liteSecond": "#18181b",
