@@ -1,4 +1,4 @@
-const getVariables = (theme = "dark") => {
+const getThemeVariants = (theme = "dark") => {
   let card,
     cardI,
     cardII,
@@ -98,6 +98,54 @@ const getVariables = (theme = "dark") => {
     hoverViewII = "hover:bg-cyan-900";
   } else if (theme === "light") {
   } else if (theme === "sky") {
+    card = "bg-teal-600";
+    cardI = "bg-teal-700";
+    cardII = "bg-teal-800";
+    hoverCard = "hover:bg-teal-700";
+    hoverCardI = "hover:bg-teal-800";
+    hoverCardII = "hover:bg-teal-900";
+    background = "bg-purple-600";
+    backgroundI = "bg-purple-700";
+    backgroundII = "bg-purple-800";
+    hoverBackground = "hover:bg-purple-700";
+    hoverBackgroundI = "hover:bg-purple-800";
+    hoverBackgroundII = "hover:bg-purple-900";
+    text = "text-purple-600";
+    textI = "text-purple-700";
+    textII = "text-purple-800";
+    hoverText = "hover:text-purple-700";
+    hoverTextI = "hover:text-purple-800";
+    hoverTextII = "hover:text-purple-900";
+    border = "border-2 border-solid border-emerald-600";
+    borderI = "border-2 border-solid border-emerald-700";
+    borderII = "border-2 border-solid border-emerald-800";
+    hoverBorder = "hover:border-emerald-700";
+    hoverBorderI = "hover:border-emerald-800";
+    hoverBorderII = "hover:border-emerald-900";
+    add = "bg-emerald-600";
+    addI = "bg-emerald-700";
+    addII = "bg-emerald-800";
+    hoverAdd = "hover:bg-emerald-700";
+    hoverAddI = "hover:bg-emerald-800";
+    hoverAddII = "hover:bg-emerald-900";
+    delete0 = "bg-red-600";
+    deleteI = "bg-red-700";
+    deleteII = "bg-red-800";
+    hoverDelete = "hover:bg-red-700";
+    hoverDeleteI = "hover:bg-red-800";
+    hoverDeleteII = "hover:bg-red-900";
+    details = "bg-green-600";
+    detailsI = "bg-green-700";
+    detailsII = "bg-green-800";
+    hoverDetails = "hover:bg-green-700";
+    hoverDetailsI = "hover:bg-green-800";
+    hoverDetailsII = "hover:bg-green-900";
+    view = "bg-teal-600";
+    viewI = "bg-teal-700";
+    viewII = "bg-teal-800";
+    hoverView = "hover:bg-teal-700";
+    hoverViewI = "hover:bg-teal-800";
+    hoverViewII = "hover:bg-teal-900";
   }
   return {
     card,
@@ -151,4 +199,4 @@ const getVariables = (theme = "dark") => {
   };
 };
 
-export default getVariables;
+export default getThemeVariants;

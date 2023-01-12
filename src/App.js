@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products";
 import Theme from "./components/Theme/Theme";
 import Users from "./components/Users/Users";
-import getVariables from "./components/utilities/getVariables";
+import getThemeVariants from "./components/utilities/getThemeVariants";
 import { useThemeDetector } from "./hooks/useThemeDetector";
 export const ThemeMode = createContext("Theme");
 export const ThemeMode2 = createContext("Theme2");
@@ -19,7 +19,7 @@ function App() {
   const currentTheme = useThemeDetector();
   useEffect(() => {
     setTheme(currentTheme ? "dark" : "light");
-    const themeData = getVariables();
+    const themeData = getThemeVariants();
     setTheme2(themeData);
   }, [currentTheme]);
   return (
