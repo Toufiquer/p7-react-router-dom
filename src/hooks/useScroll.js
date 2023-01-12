@@ -28,14 +28,14 @@ export default function useScroll() {
     }
   };
 
+  // useEffect(() => {
+  //   window.addEventListener("scroll", listener);
+  //   return () => {
+  //     window.removeEventListener("scroll", listener);
+  //   };
+  // });
   useEffect(() => {
-    window.addEventListener("scroll", listener);
-    return () => {
-      window.removeEventListener("scroll", listener);
-    };
-  });
-  useEffect(() => {
-    globalCoords.y < 120 && console.log(globalCoords.y, " => Line No: 38");
+    // globalCoords.y < 120 && console.log(globalCoords.y, " => Line No: 38");
     globalCoords.y < 120 && setScrollDirection("up");
   }, [globalCoords]);
   return {

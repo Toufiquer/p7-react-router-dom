@@ -29,3 +29,8 @@ export const useMouseMove = () => {
 
   return { coords, globalCoords, handleMouseMove, setCoords, setGlobalCoords };
 };
+
+/*
+ * if you want to use mouse move event then add the handler in div
+ * onMouseMove={handleMouseMove}
+ */

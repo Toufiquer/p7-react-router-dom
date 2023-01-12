@@ -94,95 +94,95 @@
     ]
   },
   {
-    "liteThemeWith7Color": [
+    "lightThemeWith7Color": [
       {
-        "modelNumber": "lite-7-1",
+        "modelNumber": "Light-7-1",
         "totalColor": 7,
         "color": {
-          "lite1": "#87CEEB",
-          "lite2": "#FFE5B4",
-          "lite3": "#E6E6FA",
-          "lite4": "#90EE90",
-          "lite5": "#FFFACD",
-          "lite6": "#2E8B57",
-          "lite7": "#FFC0CB"
+          "light1": "#87CEEB",
+          "light2": "#FFE5B4",
+          "light3": "#E6E6FA",
+          "light4": "#90EE90",
+          "light5": "#FFFACD",
+          "light6": "#2E8B57",
+          "light7": "#FFC0CB"
         }
       },
       {
-        "modelNumber": "lite-7-2",
+        "modelNumber": "Light-7-2",
         "totalColor": 7,
         "color": {
-          "lite1": "#be185d",
-          "lite2": "#a21caf",
-          "lite3": "#4338ca",
-          "lite4": "#0369a1",
-          "lite5": "#047857",
-          "lite6": "#4d7c0f",
-          "lite7": "#292524"
+          "light1": "#be185d",
+          "light2": "#a21caf",
+          "light3": "#4338ca",
+          "light4": "#0369a1",
+          "light5": "#047857",
+          "light6": "#4d7c0f",
+          "light7": "#292524"
         }
       }
     ]
   },
   {
-    "liteThemeWith14Color": [
+    "lightThemeWith14Color": [
       {
-        "modelNumber": "lite-14-1",
+        "modelNumber": "Light-14-1",
         "totalColor": 14,
         "color": {
-          "lite1": "#fecdd3",
-          "lite2": "#f5d0fe",
-          "lite3": "#ddd6fe",
-          "lite4": "#ddd6fe",
-          "lite5": "#c7d2fe",
-          "lite6": "#bfdbfe",
-          "lite7": "#bae6fd",
-          "lite8": "#99f6e4",
-          "lite9": "#bbf7d0",
-          "lite10": "#fde68a",
-          "lite11": "#fed7aa",
-          "lite12": "#fecaca",
-          "lite13": "#e4e4e7",
-          "lite14": "#e5e7eb"
+          "light1": "#fecdd3",
+          "light2": "#f5d0fe",
+          "light3": "#ddd6fe",
+          "light4": "#ddd6fe",
+          "light5": "#c7d2fe",
+          "light6": "#bfdbfe",
+          "light7": "#bae6fd",
+          "light8": "#99f6e4",
+          "light9": "#bbf7d0",
+          "light10": "#fde68a",
+          "light11": "#fed7aa",
+          "light12": "#fecaca",
+          "light13": "#e4e4e7",
+          "light14": "#e5e7eb"
         }
       },
       {
-        "modelNumber": "lite-14-2",
+        "modelNumber": "Light-14-2",
         "totalColor": 14,
         "color": {
-          "lite1": "#cbd5e1",
-          "lite2": "#d1d5db",
-          "lite3": "#d4d4d4",
-          "lite4": "#fca5a5",
-          "lite5": "#fdba74",
-          "lite6": "#fcd34d",
-          "lite7": "#fde047",
-          "lite8": "#5eead4",
-          "lite9": "#67e8f9",
-          "lite10": "#93c5fd",
-          "lite11": "#a5b4fc",
-          "lite12": "#c4b5fd",
-          "lite13": "#86198f",
-          "lite14": "#fda4af"
+          "light1": "#cbd5e1",
+          "light2": "#d1d5db",
+          "light3": "#d4d4d4",
+          "light4": "#fca5a5",
+          "light5": "#fdba74",
+          "light6": "#fcd34d",
+          "light7": "#fde047",
+          "light8": "#5eead4",
+          "light9": "#67e8f9",
+          "light10": "#93c5fd",
+          "light11": "#a5b4fc",
+          "light12": "#c4b5fd",
+          "light13": "#86198f",
+          "light14": "#fda4af"
         }
       },
       {
-        "modelNumber": "lite-14-3",
+        "modelNumber": "Light-14-3",
         "totalColor": 14,
         "color": {
-          "lite1": "#9ca3af",
-          "lite2": "#18181b",
-          "lite3": "#171717",
-          "lite4": "#f87171",
-          "lite5": "#fb923c",
-          "lite6": "#fbbf24",
-          "lite7": "#a3e635",
-          "lite8": "#4ade80",
-          "lite9": "#34d399",
-          "lite10": "#2dd4bf",
-          "lite11": "#22d3ee",
-          "lite12": "#60a5fa",
-          "lite13": "#c084fc",
-          "lite14": "#f472b6"
+          "light1": "#9ca3af",
+          "light2": "#18181b",
+          "light3": "#171717",
+          "light4": "#f87171",
+          "light5": "#fb923c",
+          "light6": "#fbbf24",
+          "light7": "#a3e635",
+          "light8": "#4ade80",
+          "light9": "#34d399",
+          "light10": "#2dd4bf",
+          "light11": "#22d3ee",
+          "light12": "#60a5fa",
+          "light13": "#c084fc",
+          "light14": "#f472b6"
         }
       }
     ]

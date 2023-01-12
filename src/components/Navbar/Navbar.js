@@ -1,26 +1,26 @@
 import React, { useContext } from "react";
 import { ThemeMode, ThemeMode2 } from "../../App";
 import CustomLink from "../CustomLink/CustomLink";
-import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import { MoonIcon, SparklesIcon, SunIcon } from "@heroicons/react/24/solid";
 import useScroll from "../../hooks/useScroll";
+import getVariables from "../utilities/getVariables";
 const Navbar = () => {
   const { scrollDirection } = useScroll();
   const [theme, setTheme] = useContext(ThemeMode);
   const [theme2, setTheme2] = useContext(ThemeMode2);
   const handleThemeClass = (theme) => {
-    // theme ? setTheme2([1, 2, 3]) : setTheme2([4, 5, 6]);
-    let color1, color2, color3;
-    if (theme) {
-      color1 = "bg-blue-600 hover:bg-blue-800";
-      color2 = "bg-blue-700";
-      color3 = "bg-blue-800";
-    } else {
-      color1 = "bg-red-600 hover:bg-red-800";
-      color2 = "bg-red-700";
-      color3 = "bg-red-800";
+    if (theme === "dark") {
+      console.log(theme, " => ***");
+      setTheme("sky");
+    } else if (theme === "light") {
+      console.log(theme, " => ***");
+      setTheme("dark");
+    } else if (theme === "sky") {
+      console.log(theme, " => ***");
+      setTheme("light");
     }
-    setTheme2({ color1, color2, color3 });
-    console.log(theme2, theme2.color1, " => Line No: 10");
+    const getVar = getVariables(theme);
+    setTheme2(getVar);
   };
   //
   return (
@@ -30,7 +30,6 @@ const Navbar = () => {
           <h2>Toufiquer Website</h2>
           <div className="flex items-center">
             <ul className="flex justify-end my-1">
-              <li className={theme2.color1}>For Testing purpose</li>
               <li>
                 <CustomLink to="/">Home</CustomLink>
               </li>
@@ -45,15 +44,15 @@ const Navbar = () => {
               </li>
               <li>
                 <CustomLink to="/colors">Colors</CustomLink>
+                <CustomLink to="/theme">Theme</CustomLink>
               </li>
             </ul>
             <ul
               onClick={() => {
-                setTheme(!theme);
-                handleThemeClass(!theme);
+                handleThemeClass(theme);
               }}
             >
-              {!theme ? <MoonIcon className="h-6 w-6 cursor-pointer" /> : <SunIcon className="h-6 w-6 cursor-pointer" />}
+              {(theme === "sky" && <MoonIcon className="h-6 w-6 cursor-pointer" />) || (theme === "dark" && <SunIcon className="h-6 w-6 cursor-pointer" />) || (theme === "light" && <SparklesIcon className="h-6 w-6 cursor-pointer" />) || "Icon"}
             </ul>
           </div>
         </nav>
