@@ -1,20 +1,23 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { ThemeMode, ThemeMode2 } from "../../App";
 import { AddButton, DetailsButton, RemoveButton } from "../Button/Button";
+import { addToCart, removeFromCart } from "../utilities/eventHandler";
 
 const Product = ({ product: { id, name, picture, price } }) => {
+  const navigate = useNavigate();
   const [theme] = useContext(ThemeMode);
   const handAdd = (event, id) => {
     event.stopPropagation();
-    console.log("Add", id, " => Line No: 6");
+    addToCart(id);
   };
   const handleRemove = (event, id) => {
     event.stopPropagation();
-    console.log("Remove", id, " => Line No: 10");
+    removeFromCart(id);
   };
   const handleDetails = (event, id) => {
     event.stopPropagation();
-    console.log("details", id, " => Line No: 10");
+    navigate(`/products/${id}`);
   };
   const [theme2] = useContext(ThemeMode2);
   const { backgroundI, borderI, text } = theme2;

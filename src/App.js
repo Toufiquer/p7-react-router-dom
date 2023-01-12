@@ -5,6 +5,7 @@ import Charts from "./components/Charts/Charts";
 import Colors from "./components/Colors/Colors";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Products from "./components/Products/Products";
 import Theme from "./components/Theme/Theme";
 import Users from "./components/Users/Users";
@@ -31,6 +32,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/products" element={<Products />}></Route>
+            <Route path="/products/:id" element={<ProductDetails />}></Route>
             <Route path="/users" element={<Users />}></Route>
             <Route path="/charts" element={<Charts />}></Route>
             <Route path="/colors" element={<Colors />}></Route>
