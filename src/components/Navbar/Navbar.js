@@ -28,6 +28,7 @@ const Navbar = () => {
     }
   };
   const { background, hoverBackground } = theme2;
+  const iconStyle = "h-6 w-6 cursor-pointer";
   return (
     <div className={`${scrollDirection !== "down" ? " block sticky top-0 " : " hidden "}  ${background} ${hoverBackground} z-50 py-2 w-full "`}>
       <div className="md:container mx-auto text-2xl ">
@@ -57,7 +58,7 @@ const Navbar = () => {
                 handleThemeClass(theme);
               }}
             >
-              {(theme === "dark" && <MoonIcon className="h-6 w-6 cursor-pointer" />) || (theme === "light" && <SunIcon className="h-6 w-6 cursor-pointer" />) || (theme === "sky" && <SparklesIcon className="h-6 w-6 cursor-pointer" />) || "Icon"}
+              {(theme === "light" && <MoonIcon className={iconStyle} />) || (theme === "sky" && <SunIcon className={iconStyle} />) || (theme === "dark" && <SparklesIcon className={iconStyle} />) || "Icon"}
             </ul>
           </div>
         </nav>
