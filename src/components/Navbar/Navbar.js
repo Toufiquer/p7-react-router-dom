@@ -8,23 +8,28 @@ const Navbar = () => {
   const { scrollDirection } = useScroll();
   const [theme, setTheme] = useContext(ThemeMode);
   const [theme2, setTheme2] = useContext(ThemeMode2);
+
   const handleThemeClass = (theme) => {
     if (theme === "dark") {
-      console.log(theme, " => ***");
+      const getVar = getVariables("sky");
+      console.log(getVar.background, " => sky");
+      setTheme2(getVar);
       setTheme("sky");
     } else if (theme === "light") {
-      console.log(theme, " => ***");
+      const getVar = getVariables("dark");
+      console.log(getVar.background, " => dark");
+      setTheme2(getVar);
       setTheme("dark");
     } else if (theme === "sky") {
-      console.log(theme, " => ***");
+      const getVar = getVariables("light");
+      console.log(getVar.background, " => light");
+      setTheme2(getVar);
       setTheme("light");
     }
-    const getVar = getVariables(theme);
-    setTheme2(getVar);
   };
-  //
+  const { background } = theme2;
   return (
-    <div className={`${scrollDirection !== "down" ? " block sticky top-0 " : " hidden "} +  ${theme ? "bg-darkFirst text-darkSecond" : "text-primaryText "} " z-50 py-2 w-full "`}>
+    <div className={`${scrollDirection !== "down" ? " block sticky top-0 " : " hidden "}  ${background} z-50 py-2 w-full "`}>
       <div className="md:container mx-auto text-2xl ">
         <nav className="flex justify-between md:flex-row flex-col text-center">
           <h2>Toufiquer Website</h2>
@@ -52,7 +57,7 @@ const Navbar = () => {
                 handleThemeClass(theme);
               }}
             >
-              {(theme === "sky" && <MoonIcon className="h-6 w-6 cursor-pointer" />) || (theme === "dark" && <SunIcon className="h-6 w-6 cursor-pointer" />) || (theme === "light" && <SparklesIcon className="h-6 w-6 cursor-pointer" />) || "Icon"}
+              {(theme === "dark" && <MoonIcon className="h-6 w-6 cursor-pointer" />) || (theme === "light" && <SunIcon className="h-6 w-6 cursor-pointer" />) || (theme === "sky" && <SparklesIcon className="h-6 w-6 cursor-pointer" />) || "Icon"}
             </ul>
           </div>
         </nav>

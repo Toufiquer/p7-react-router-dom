@@ -13,10 +13,10 @@ export const useMouseMove = () => {
         y: event.screenY,
       });
     };
-    window.addEventListener("mousemove", handleWindowMouseMove);
+    // window.addEventListener("mousemove", handleWindowMouseMove);
 
     return () => {
-      window.removeEventListener("mousemove", handleWindowMouseMove);
+      // window.removeEventListener("mousemove", handleWindowMouseMove);
     };
   }, []);
 

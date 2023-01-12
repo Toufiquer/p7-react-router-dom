@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products";
 import Theme from "./components/Theme/Theme";
 import Users from "./components/Users/Users";
+import getVariables from "./components/utilities/getVariables";
 import { useThemeDetector } from "./hooks/useThemeDetector";
 export const ThemeMode = createContext("Theme");
 export const ThemeMode2 = createContext("Theme2");
@@ -18,6 +19,8 @@ function App() {
   const currentTheme = useThemeDetector();
   useEffect(() => {
     setTheme(currentTheme ? "dark" : "light");
+    const themeData = getVariables();
+    setTheme2(themeData);
   }, [currentTheme]);
   return (
     <ThemeMode.Provider value={[theme, setTheme]}>
