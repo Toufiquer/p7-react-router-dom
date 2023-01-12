@@ -6,8 +6,10 @@
  */
 
 import { useState, useEffect } from "react";
+import { useMouseMove } from "./useMouseMove";
 
 export default function useScroll() {
+  const { globalCoords } = useMouseMove();
   const [dataArr, setDataArr] = useState([]);
   // storing this to get the scroll direction
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -17,11 +19,13 @@ export default function useScroll() {
 
   const listener = (e) => {
     setBodyOffset(document.body.getBoundingClientRect());
-    setLastScrollTop(-bodyOffset.top);
+    setLastScrollTop(bodyOffset.top);
     const newArr = [lastScrollTop, ...dataArr];
     newArr.length = 16;
     setDataArr(newArr);
-    setScrollDirection(dataArr[0] > dataArr[15] ? "down" : "up");
+    if (dataArr[15] < -65) {
+      setScrollDirection(dataArr[0] <= dataArr[15] ? "down" : "up");
+    }
   };
 
   useEffect(() => {
@@ -30,7 +34,10 @@ export default function useScroll() {
       window.removeEventListener("scroll", listener);
     };
   });
-
+  useEffect(() => {
+    globalCoords.y < 120 && console.log(globalCoords.y, " => Line No: 38");
+    globalCoords.y < 120 && setScrollDirection("up");
+  }, [globalCoords]);
   return {
     scrollDirection,
   };

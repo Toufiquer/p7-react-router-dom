@@ -7,11 +7,13 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products";
 import Users from "./components/Users/Users";
+import { useMouseMove } from "./hooks/useMouseMove";
 import { useThemeDetector } from "./hooks/useThemeDetector";
 export const ThemeMode = createContext("Theme");
 export const ThemeMode2 = createContext("Theme2");
 
 function App() {
+  const { handleMouseMove } = useMouseMove();
   const [theme, setTheme] = useState(true);
   const [theme2, setTheme2] = useState({});
   const currentTheme = useThemeDetector();
@@ -21,7 +23,7 @@ function App() {
   return (
     <ThemeMode.Provider value={[theme, setTheme]}>
       <ThemeMode2.Provider value={[theme2, setTheme2]}>
-        <Navbar></Navbar>
+        <Navbar onMouseMove={handleMouseMove}></Navbar>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
