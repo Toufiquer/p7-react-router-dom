@@ -19,25 +19,26 @@ function App() {
   const currentTheme = useThemeDetector();
   useEffect(() => {
     const themeData = getThemeVariants();
-    console.log(themeData, " => Line No: 22");
     setTheme(currentTheme ? "dark" : "light");
     setTheme2(themeData);
   }, [currentTheme]);
   return (
-    <ThemeMode.Provider value={[theme, setTheme]}>
-      <ThemeMode2.Provider value={[theme2, setTheme2]}>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/products" element={<Products />}></Route>
-          <Route path="/users" element={<Users />}></Route>
-          <Route path="/charts" element={<Charts />}></Route>
-          <Route path="/colors" element={<Colors />}></Route>
-          <Route path="/theme" element={<Theme />}></Route>
-        </Routes>
-      </ThemeMode2.Provider>
-    </ThemeMode.Provider>
+    <div className="duration-300">
+      <ThemeMode.Provider value={[theme, setTheme]}>
+        <ThemeMode2.Provider value={[theme2, setTheme2]}>
+          <Navbar></Navbar>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/products" element={<Products />}></Route>
+            <Route path="/users" element={<Users />}></Route>
+            <Route path="/charts" element={<Charts />}></Route>
+            <Route path="/colors" element={<Colors />}></Route>
+            <Route path="/theme" element={<Theme />}></Route>
+          </Routes>
+        </ThemeMode2.Provider>
+      </ThemeMode.Provider>
+    </div>
   );
 }
 
