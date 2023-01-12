@@ -4,7 +4,8 @@ import { ThemeMode2 } from "../../App";
 
 const CustomLink = ({ children, to, ...props }) => {
   const [theme2] = useContext(ThemeMode2);
-  const { text, hoverText } = { theme2 };
+  const { text, hoverText } = theme2;
+  console.log(text, hoverText, " => Line No: 8");
   let resolved = useResolvedPath(to);
   let match = useMatch({ path: resolved.pathname, end: true });
   const style = `px-4 duration-200 ${text} ${hoverText}`;

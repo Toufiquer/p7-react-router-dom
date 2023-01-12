@@ -10,7 +10,7 @@ const HomeContainer = () => {
   customProducts.length = 3;
   const navigate = useNavigate();
   return (
-    <div className="p-4">
+    <div className={`p-4 `}>
       {/* Display 3 Products in home page */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-1 ">
         {customProducts.map((product) => (

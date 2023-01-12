@@ -12,28 +12,30 @@ const Navbar = () => {
   const handleThemeClass = (theme) => {
     if (theme === "dark") {
       const getVar = getThemeVariants("sky");
-      console.log(getVar.background, " => sky");
+      console.log(getVar, " => sky");
       setTheme2(getVar);
       setTheme("sky");
+      return;
     } else if (theme === "light") {
       const getVar = getThemeVariants("dark");
-      console.log(getVar.background, " => dark");
+      console.log(getVar, " => dark");
       setTheme2(getVar);
       setTheme("dark");
+      return;
     } else if (theme === "sky") {
       const getVar = getThemeVariants("light");
-      console.log(getVar.background, " => light");
+      console.log(getVar, " => light");
       setTheme2(getVar);
       setTheme("light");
     }
   };
-  const { background, hoverBackground } = theme2;
-  const iconStyle = "h-6 w-6 cursor-pointer";
+  const { backgroundI, hoverBackgroundII, text, hoverText } = theme2;
+  const iconStyle = ` h-6 w-6 cursor-pointer ${text} ${hoverText}`;
   return (
-    <div className={`${scrollDirection !== "down" ? " block sticky top-0 " : " hidden "}  ${background} ${hoverBackground} z-50 py-2 w-full "`}>
+    <div className={`${scrollDirection !== "down" ? " block sticky top-0 " : " hidden "}  ${backgroundI} ${hoverBackgroundII} z-50 py-2 w-full "`}>
       <div className="md:container mx-auto text-2xl ">
         <nav className="flex justify-between md:flex-row flex-col text-center">
-          <h2>Toufiquer Website</h2>
+          <h2 className={` ${text} ${hoverText} font-semibold text-3xl`}>Toufiquer Website</h2>
           <div className="flex items-center">
             <ul className="flex justify-end my-1">
               <li>

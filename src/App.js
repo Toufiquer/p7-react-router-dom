@@ -18,8 +18,9 @@ function App() {
   const [theme2, setTheme2] = useState({});
   const currentTheme = useThemeDetector();
   useEffect(() => {
-    setTheme(currentTheme ? "dark" : "light");
     const themeData = getThemeVariants();
+    console.log(themeData, " => Line No: 22");
+    setTheme(currentTheme ? "dark" : "light");
     setTheme2(themeData);
   }, [currentTheme]);
   return (

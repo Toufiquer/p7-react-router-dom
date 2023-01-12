@@ -5,9 +5,9 @@ import HomeContainer from "../HomeContainer/HomeContainer";
 
 const Home = () => {
   const [theme2] = useContext(ThemeMode2);
-  const { background, hoverBackground } = theme2;
+  const { background } = theme2;
   return (
-    <div className={`${background} ${hoverBackground} min-h-screen w-full grid grid-cols-1 md:grid-cols-[1fr_400px]`}>
+    <div className={`${background}  min-h-screen w-full grid grid-cols-1 md:grid-cols-[1fr_400px]`}>
       <HomeContainer></HomeContainer>
       <HomeCarts></HomeCarts>
     </div>
