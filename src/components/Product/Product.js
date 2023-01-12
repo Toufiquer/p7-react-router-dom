@@ -24,7 +24,7 @@ const Product = ({ product: { id, name, picture, price } }) => {
       <h2 title={name} className={`${text} text-2xl`}>
         Name: {name.length >= 14 ? name.slice(0, 14) : name}
       </h2>
-      <h2 className="text-3xl py-1">Price: ${price}</h2>
+      <h2 className={`${text} text-3xl font-extralight`}>Price: ${price}</h2>
       <div className="flex w-full justify-evenly flex-col">
         <div className="flex w-full justify-evenly my-1 gap-1">
           <AddButton id={id} handler={handAdd}>

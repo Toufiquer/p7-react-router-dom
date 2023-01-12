@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeMode2 } from "../../App";
+import { useProducts } from "../../hooks/useProducts";
+import SummaryCart from "../SummaryCart/SummaryCart";
 
 const HomeCarts = () => {
-  return <div>Home Carts</div>;
+  const [theme2] = useContext(ThemeMode2);
+  const { backgroundII, border, text } = theme2;
+  const [products] = useProducts();
+
+  return (
+    <div className={`min-h-screen ${backgroundII} relative p-4`}>
+      <div className={` ${border} min-h-[400px] sticky top-[65px]`}>
+        <h2 className={`${text} text-center text-2xl my-2`}>Summary</h2>
+        <div className="flex flex-col">{products.length >= 1 ? <SummaryCart name={"Products"} value={products.length} /> : <SummaryCart empty={true}></SummaryCart>}</div>
+      </div>
+    </div>
+  );
 };
 
 export default HomeCarts;
