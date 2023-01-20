@@ -11,21 +11,21 @@ const Navbar = () => {
 
   const handleThemeClass = (theme) => {
     if (theme === "dark") {
-      const getVar = getThemeVariants("sky");
-      console.log(getVar, " => sky");
-      setTheme2(getVar);
+      const getThemeData = getThemeVariants("sky");
+      // console.log(getThemeData, " => sky");
+      setTheme2(getThemeData);
       setTheme("sky");
       return;
     } else if (theme === "light") {
-      const getVar = getThemeVariants("dark");
-      console.log(getVar, " => dark");
-      setTheme2(getVar);
+      const getThemeData = getThemeVariants("dark");
+      // console.log(getThemeData, " => dark");
+      setTheme2(getThemeData);
       setTheme("dark");
       return;
     } else if (theme === "sky") {
-      const getVar = getThemeVariants("light");
-      console.log(getVar, " => light");
-      setTheme2(getVar);
+      const getThemeData = getThemeVariants("light");
+      // console.log(getThemeData, " => light");
+      setTheme2(getThemeData);
       setTheme("light");
     }
   };

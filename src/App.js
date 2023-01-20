@@ -16,7 +16,7 @@ export const ThemeMode2 = createContext("Theme2");
 
 function App() {
   const [theme, setTheme] = useState("dark");
-  const [theme2, setTheme2] = useState({});
+  const [theme2, setTheme2] = useState({}); 
   const currentTheme = useThemeDetector();
   useEffect(() => {
     const themeData = getThemeVariants();

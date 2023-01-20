@@ -5,6 +5,7 @@ import { useProducts } from "../../hooks/useProducts";
 import { getProductById } from "../utilities/getProductById";
 import { DetailsPage } from "../Button/Button";
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+import { ImageZoom } from "../ImageZoom/ImageZoom";
 const ProductDetails = () => {
   const navigate = useNavigate();
   const [product, setProduct] = useState({});
@@ -23,6 +24,7 @@ const ProductDetails = () => {
       {product ? (
         <div className={` ${card} ${border} max-w-[600px] min-h-[400px] mx-auto my-4 p-2 py-8`}>
           <img src={picture} alt={name} />
+          <ImageZoom fnDefault={"wooo"}></ImageZoom>
           <h2 className={` ${text} text-3xl font-bold mt-8`}>Name: {name}</h2>
           <h2 className={` ${text} text-3xl font-100 mt-4`}>Price: ${price}</h2>
           <p className={` ${text} text-xl mt-4`}>
