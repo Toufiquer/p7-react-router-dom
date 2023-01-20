@@ -1,5 +1,5 @@
-const getItem = () => {
-  let cart = localStorage.getItem("Theme-Bar-Cart");
+const getItem = (name) => {
+  let cart = localStorage.getItem(name);
   if (cart) {
     cart = JSON.parse(cart);
   } else {
@@ -7,11 +7,11 @@ const getItem = () => {
   }
   return cart;
 };
-const saveToDB = (data) => {
-  localStorage.setItem("Theme-Bar-Cart", JSON.stringify(data));
+const saveToDB = (name, data) => {
+  localStorage.setItem(name, JSON.stringify(data));
 };
 const addToDB = (id) => {
-  const cart = getItem();
+  const cart = getItem("Theme-Bar-Cart");
   let quantity = cart[id];
   if (quantity) {
     quantity += 1;
@@ -19,10 +19,10 @@ const addToDB = (id) => {
     quantity = 1;
   }
   cart[id] = quantity;
-  saveToDB(cart);
+  saveToDB("Theme-Bar-Cart", cart);
 };
 const removeFromDB = (id) => {
-  const cart = getItem();
+  const cart = getItem("Theme-Bar-Cart");
   let quantity = cart[id];
   if (quantity === 1) {
     delete cart[id];
@@ -30,6 +30,25 @@ const removeFromDB = (id) => {
     quantity -= 1;
     cart[id] = quantity;
   }
-  saveToDB(cart);
+  saveToDB("Theme-Bar-Cart", cart);
 };
-export { getItem, addToDB, removeFromDB };
+const addUserToDB = (id) => {
+  const cart = getItem("Theme-Users");
+  let quantity = cart[id];
+  if (quantity) {
+    return;
+  } else {
+    quantity = 1;
+  }
+  cart[id] = quantity;
+  saveToDB("Theme-Users", cart);
+};
+const removeUserFromDB = (id) => {
+  const cart = getItem("Theme-Users");
+  let quantity = cart[id];
+  if (quantity === 1) {
+    delete cart[id];
+  }
+  saveToDB("Theme-Users", cart);
+};
+export { getItem, addToDB, removeFromDB, removeUserFromDB, addUserToDB };

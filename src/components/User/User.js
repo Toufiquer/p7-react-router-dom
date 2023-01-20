@@ -2,13 +2,14 @@ import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import { ThemeMode2 } from "../../App";
 import { AddUser, RemoveUser } from "../Button/Button";
+import { addUserToDB, removeUserFromDB } from "../utilities/manageDB";
 
 const User = ({ user, user: { name, email, id } }) => {
   const handleAddUser = (e, id) => {
-    console.log(id, " => Line No: 7");
+    addUserToDB(id);
   };
   const handleRemoveUser = (e, id) => {
-    console.log(id, " => Line No: 7");
+    removeUserFromDB(id);
   };
   const [img, setImg] = useState("");
   useEffect(() => {
