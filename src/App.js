@@ -9,6 +9,7 @@ import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Products from "./components/Products/Products";
 import Theme from "./components/Theme/Theme";
 import Users from "./components/Users/Users";
+import UsersOutlet from "./components/UsersOutlet/UsersOutlet";
 import getThemeVariants from "./components/utilities/getThemeVariants";
 import { useThemeDetector } from "./hooks/useThemeDetector";
 export const ThemeMode = createContext("Theme");
@@ -16,7 +17,7 @@ export const ThemeMode2 = createContext("Theme2");
 
 function App() {
   const [theme, setTheme] = useState("dark");
-  const [theme2, setTheme2] = useState({}); 
+  const [theme2, setTheme2] = useState({});
   const currentTheme = useThemeDetector();
   useEffect(() => {
     const themeData = getThemeVariants();
@@ -34,6 +35,7 @@ function App() {
             <Route path="/products" element={<Products />}></Route>
             <Route path="/products/:id" element={<ProductDetails />}></Route>
             <Route path="/users" element={<Users />}></Route>
+            <Route path="/users/usersOutLet" element={<UsersOutlet />}></Route>
             <Route path="/charts" element={<Charts />}></Route>
             <Route path="/colors" element={<Colors />}></Route>
             <Route path="/theme" element={<Theme />}></Route>
