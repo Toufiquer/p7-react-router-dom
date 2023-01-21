@@ -1,14 +1,12 @@
 import React, { useContext } from "react";
 import { ThemeMode2 } from "../../App";
-import { useProducts } from "../../hooks/useProducts";
 import useScroll from "../../hooks/useScroll";
 import SummaryCart from "../SummaryCart/SummaryCart";
 
-const HomeCarts = () => {
+const HomeCarts = ({ products }) => {
   const { scrollDirection } = useScroll();
   const [theme2] = useContext(ThemeMode2);
   const { backgroundII, border, text } = theme2;
-  const [products] = useProducts();
 
   return (
     <div className={`min-h-screen ${backgroundII} relative p-4`}>

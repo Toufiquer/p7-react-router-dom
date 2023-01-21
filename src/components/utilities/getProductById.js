@@ -6,4 +6,14 @@ const getProductById = (id, products) => {
     return (product = {});
   }
 };
-export { getProductById };
+const getProductsById = (ids, products) => {
+  const allProducts = [];
+  for (let id in ids) {
+    const product = products.find((curr) => curr.id === id);
+    if (product) {
+      allProducts.push(product);
+    }
+  }
+  return allProducts;
+};
+export { getProductById, getProductsById };
