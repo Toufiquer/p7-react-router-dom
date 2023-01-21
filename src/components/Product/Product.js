@@ -1,19 +1,30 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ThemeMode, ThemeMode2 } from "../../App";
+import { useProducts } from "../../hooks/useProducts";
 import { AddButton, DetailsButton, RemoveButton } from "../Button/Button";
 import { addToCart, removeFromCart } from "../utilities/eventHandler";
+import { getProductById, getProductsById } from "../utilities/getProductById";
+import { getItem } from "../utilities/manageDB";
 
-const Product = ({ product: { id, name, picture, price } }) => {
+const Product = ({ setCartProducts, cartProducts, product: { id, name, picture, price } }) => {
+  const products = useProducts();
   const navigate = useNavigate();
   const [theme] = useContext(ThemeMode);
   const handAdd = (event, id) => {
     event.stopPropagation();
     addToCart(id);
+    const product = getProductById(id, products);
+    const updateCartProducts = [...cartProducts, product];
+    setCartProducts(updateCartProducts);
   };
   const handleRemove = (event, id) => {
     event.stopPropagation();
     removeFromCart(id);
+
+    const updateCartProducts = cartProducts.filter((curr) => curr.id !== id);
+    console.log(updateCartProducts, id, cartProducts, " => Line No: 26");
+    setCartProducts(updateCartProducts);
   };
   const handleDetails = (event, id) => {
     event.stopPropagation();

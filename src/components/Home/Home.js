@@ -6,8 +6,8 @@ import HomeContainer from "../HomeContainer/HomeContainer";
 import { getItem } from "../utilities/manageDB";
 import { getProductsById } from "../utilities/getProductById";
 const Home = () => {
-  const [cartProducts, setCartProducts] = useState([]);
   const [products] = useProducts();
+  const [cartProducts, setCartProducts] = useState([]);
   useEffect(() => {
     const getStoredCart = getItem("Theme-Bar-Cart");
     const storedProducts = getProductsById(getStoredCart, products);
@@ -17,7 +17,7 @@ const Home = () => {
   const { background } = theme2;
   return (
     <div className={`${background}  min-h-screen w-full grid grid-cols-1 md:grid-cols-[1fr_400px]`}>
-      <HomeContainer></HomeContainer>
+      <HomeContainer cartProducts={cartProducts} setCartProducts={setCartProducts}></HomeContainer>
       <HomeCarts products={cartProducts}></HomeCarts>
     </div>
   );
